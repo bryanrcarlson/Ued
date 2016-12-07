@@ -6,7 +6,18 @@
     /// </summary>
     public enum UedVariableCode : uint
     {
-       CSVC_crop_base_name                                          =0x80210000,
+        // 161206 Added from Brc.Ued.UedVariableCode
+        Weather_Precipitation                                       =0x5820001,
+        Weather_TemperatureMax                                      =0x2870001,
+        Weather_TemperatureMin                                      =0x3870001,
+        Weather_RelativeHumidityMax                                 =0x2830001,
+        Weather_RelativeHumidityMin                                 =0x3830001,
+        Weather_AverageDewpoint                                     =0x1870002,
+        Weather_SolarRadiation                                      =0x1860201,
+        Weather_WindSpeed                                           =0x1a20001,
+
+        // From CropSyst\souce\csvc.cs
+        CSVC_crop_base_name                                         =0x80210000,
        CSVC_crop_base_growing_degree_days_period_accum              =0x87210001,
        CSVC_crop_base_seasonal_thermal_time_period_sum              =0x8d21000f,
        CSVC_crop_base_dry_biomass_deprecate                         =0x80210007,
